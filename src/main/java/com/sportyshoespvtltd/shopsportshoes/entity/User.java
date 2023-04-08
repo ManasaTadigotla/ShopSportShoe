@@ -43,6 +43,9 @@ public class User {
 	@OneToMany(mappedBy = "user")
 	private List<CustomerOrder> orders=new ArrayList<>();
 	
+	@OneToMany(mappedBy = "purchaseduser")
+	private List<PurchaseItem> puchaseItems=new ArrayList<>();
+	
 	public List<CustomerOrder> getOrders() {
 		return orders;
 	}
@@ -56,8 +59,6 @@ public class User {
 		this.puchaseItems = puchaseItems;
 	}
 
-	@OneToMany(mappedBy = "purchaseduser")
-	private List<PurchaseItem> puchaseItems=new ArrayList<>();
 	
 	public User() {
 		super();

@@ -52,10 +52,10 @@ public class PurchaseItem {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public PurchaseItem(Long id, CustomerOrder order, int quantity, BigDecimal unitprice, BigDecimal totaPrice) {
+	public PurchaseItem(Long id, int quantity, BigDecimal unitprice, BigDecimal totaPrice) {
 		super();
 		this.id = id;
-		this.order = order;
+		//this.order = order;
 		//this.purchaseduser = user;
 		this.quantity = quantity;
 		this.unitprice = unitprice;
